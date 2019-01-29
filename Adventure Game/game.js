@@ -27,7 +27,7 @@ function Game() {
             
         }else if (fitnessStart == "exit room" || fitnessStart == "exit") {
             
-                var innerHallwaySouth = prompt("You come to an area of this hallway where there are two doors behind you and a door in front of you.").toLowerCase();
+                var innerHallwaySouth = prompt("You come to an area of this hallway where there is a door behind you, a door in front of you, and looking to the right there is also a door.").toLowerCase();
             
         }
         
