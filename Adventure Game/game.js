@@ -10,6 +10,7 @@ Multiline comment
 // confirm("Do you like pokemon?");
 
 // prompt("What type of pokemon do you like?");
+/*
 var Position = {
     x: 6,
     y: 9
@@ -20,45 +21,40 @@ var Inventory = {
     pillStrength : 0,
     pillSenses : 0
 };
-
+*/
 Game();
 
 function Game() {
     document.write("Game Name");
+    var movementCounter = 0;
+    var gametrue = true;
+    var response = "";
     var playerName = prompt("What is your name?");
-    int movementCounter = 0;
     Start();
-    while(){
-        switch(){
+    while(gametrue) {
+        switch(response){
         case "help":
             alert("")//Need to implement the commands the player can try here.
-        break;
-        case "":
-        break;
-        case "":
-        break;
-        case "":
-        break;
-        case "":
-        break;
-        case "":
-        break;
-        case "":
-        break;
+            break;
+        case "quit":
+            Gametrue=false;
+            break;
         default:
             alert("???");
             movementCounter--;
-        break;
-        movementCounter++;
+            break;
+        }
+                movementCounter++;
+        if(movementCounter < 130) {
+            Gametrue = false;
+        }
     }
-    }
-
 }
-    function Start() {
+/*
+function Start() {
         var fitnessStart = alert("You have awoken in a strange room " + playerName + ", Yet you don't know how you got there, in fact you don't remember anything. Then you get off the table and look around.");
-        Fitnessroom();
     }
-    function Fitnessroom() {
+function Fitnessroom() {
         var fitness = prompt();
         if (fitness == "look around" || fitness == "look") {
             
@@ -75,9 +71,9 @@ function Game() {
             alert("That isn't one of the options!")
         }
         
-        
 }
-    function Innerhallway() {
+function Innerhallway() {
+
         if(Position.y == 8){
             var innerHallwaySouth = prompt("You come to an area of this hallway where there is a door behind you, a door in front of you, and looking to the right there is also a door.").toLowerCase();
         }else if(Position.y == 4){
@@ -85,7 +81,6 @@ function Game() {
         }else if(Position.x == 5){
             
         }else{
-            
         }
-    }
-    
+}
+*/
