@@ -35,6 +35,47 @@
                 width: 300px;
                 height: 300px;
                 border-radius: 100%;
+                animation-name: example;
+                animation-delay: 1.5s;
+                animation-duration: 1s;
+            }
+            div#triangle{
+                width:0px;
+                height:0px;
+                border-bottom: 100px solid aqua;
+                border-top:100px solid transparent;
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+                transition: 1.5s;
+                position: absolute;
+                left: 300px;
+                top: 400px;
+            }
+            div#triangle:hover {
+                width: 0px;
+                height: 0px;
+                border-top:100px solid red;
+                border-left: 100px solid pink;
+                border-right: 100px solid wheat;
+                border-radius: 100%;
+                transform: rotate(720deg);
+            }
+            @keyframes example {
+                0%   {background-color: red;}
+                30%  {background-color: yellow;}
+                90%  {background-color: blue;}
+                100% {background-color: green;}
+            }
+            img#Kira{
+                display: block;
+                height: 30%;
+                border: solid 10px black;
+                position: absolute;
+                left: 300px;
+                top: 800px;
+                z-index: -1;
+                border-radius: 10%;
+                box-shadow: 30px 30px;
             }
         </style>
     </head>
@@ -42,5 +83,7 @@
         <h1>CSS Exercises</h1>
         <h3>Part 1</h3>
         <div id="box"></div>
+        <div id="triangle"></div>
+        <img src="KillerQueen.jpeg" id="Kira">
     </body>
 </html>
