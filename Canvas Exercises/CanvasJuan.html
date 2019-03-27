@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <canvas id="myCanvas" width="300" height="300"style="border:5px solid #ff00ff;"></canvas>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(0, 0, 150, 150);
+            ctx.fillStyle = "#0000FF";
+            ctx.fillRect(150, 0, 300, 150);
+            ctx.fillStyle = "#00FF00";
+            ctx.fillRect(0, 150, 150, 300);
+            ctx.fillStyle = "#FFFF00";
+            ctx.fillRect(150, 150, 300, 300);
+            // Create gradient
+            var grd = ctx.createLinearGradient(0, 0, 150, 150);
+            grd.addColorStop(0, "red");
+            grd.addColorStop(1, "black");
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(75, 75, 75, 75);
+            // Create gradient
+            var grd = ctx.createLinearGradient(300, 0, 150, 150);
+            grd.addColorStop(0, "blue");
+            grd.addColorStop(1, "black");
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(150, 75, 75, 75);
+            // Create gradient
+            var grd = ctx.createLinearGradient(0, 300, 150, 150);
+            grd.addColorStop(0, "green");
+            grd.addColorStop(1, "black");
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(75, 150, 75, 75);
+            // Create gradient
+            var grd = ctx.createLinearGradient(300, 300, 150, 150);
+            grd.addColorStop(0, "yellow");
+            grd.addColorStop(1, "black");
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(150, 150, 75, 75);
+            ctx.moveTo(0, 0);
+            ctx.lineTo(225, 75);
+            ctx.stroke();
+            ctx.lineTo(150, 150);
+            ctx.stroke();
+            ctx.lineTo(225, 225);
+            ctx.stroke();
+            ctx.lineTo(0, 300);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(150, 150, 106.07, 0, 2 * Math.PI);
+            ctx.stroke();
+            
+        </script>
+    </body>
+</html>
