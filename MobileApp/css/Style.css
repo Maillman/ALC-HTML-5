@@ -20,8 +20,17 @@ body{
 
 div#container{
     width:%;
-    border: 3px dashed orange;
+    /*border: 3px dashed orange;*/
     background-color:azure;
+    animation-name:borderChange;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes borderChange {
+    0% {border: 3px dashed blue;}
+    50% {border: 3px dashed orange;}
+    100% {border: 3px dashed blue;}
 }
 
 header{
@@ -42,6 +51,7 @@ div#content{
     font-family: 'UnifrakturMaguntia', cursive;
 }
 
+/*
 nav{
     background-color:rebeccapurple;
     font-family: 'Allerta Stencil', sans-serif;
@@ -88,4 +98,31 @@ div.keepOpen{
         float:none;
         text-align:center;
     }
+}
+*/
+
+.icon-bar {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background-color:#555;
+    overflow:auto;
+}
+
+.icon-bar a {
+    float:left;
+    width:20%;
+    text-align:center;
+    padding:12px 0;
+    transition: all 0.3s ease;
+    color:white;
+    font-size:36px;
+}
+
+.icon-bar a:hover {
+    background-color:#000;
+}
+
+.active {
+    background-color:#ffa20e;
 }
