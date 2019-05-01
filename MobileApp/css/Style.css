@@ -10,8 +10,17 @@ html,body,div,p,ul,ol,li,h1,h2,h3,h4,h5,h6 {
     padding:0;
 }
 
-h1{
-    
+header img#Applogo{
+    display:block;
+    margin:auto;
+    width:100px;
+}
+
+header h1{
+    color:darkblue;
+    text-align:center;
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 2.5em;
 }
 
 body{
@@ -23,14 +32,17 @@ div#container{
     /*border: 3px dashed orange;*/
     background-color:azure;
     animation-name:borderChange;
-    animation-duration:1s;
+    animation-duration:5s;
     animation-iteration-count: infinite;
 }
 
 @keyframes borderChange {
     0% {border: 3px dashed blue;}
-    50% {border: 3px dashed orange;}
-    100% {border: 3px dashed blue;}
+    20% {border: 3px dashed orange;}
+    40% {border: 3px dashed red;}
+    60% {border: 3px dashed green;}
+    80% {border: 3px dashed yellow;}
+    100% {border: 3px dashed purple;}
 }
 
 header{
