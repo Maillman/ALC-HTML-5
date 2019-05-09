@@ -71,30 +71,26 @@ div#content h4{
     text-align:center;
 }
 
-
-nav{
-    background-color:rebeccapurple;
-    font-family: 'Allerta Stencil', sans-serif;
-    font-size: 25px
+div#product_grp{
+    width:auto;
+    margin:auto;
 }
 
-nav ul{
-    list-style:none;
-}
-
-nav ul li a{
+figure.product{
     float:left;
-    display:block;    
-    padding: 5px 10px;
-    border-left: 2px inset #000;
-    border-right: 2px inset #000;
-    color:ghostwhite;
-    text-decoration:none;
-    
+    width:30%;
+    background-color:rebeccapurple;
 }
-nav ul li a:hover{
-    background-color:red;
-    color:black;
+
+figure.product img{
+    display:block;
+    padding:10px;
+    width:auto;
+    margin:auto;
+}
+
+figure.product figcaption{
+    text-align:center;
 }
 
 footer{
