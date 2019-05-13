@@ -71,30 +71,30 @@ div#content h4{
     text-align:center;
 }
 
-div#product_grp{
-    width:auto;
-    margin:auto;
-}
 
-figure.product{
-    float:left;
-    width:30%;
-    margin:1.66%;
+nav{
     background-color:rebeccapurple;
-}
-
-figure.product img{
-    display:block;
-    padding:10px;
-    width:90%;
-    margin:auto;
-}
-
-figure.product figcaption{
-    text-align:center;
-    color: ghostwhite;
     font-family: 'Allerta Stencil', sans-serif;
-    font-size: 24px;
+    font-size: 25px
+}
+
+nav ul{
+    list-style:none;
+}
+
+nav ul li a{
+    float:left;
+    display:block;    
+    padding: 10px 10px;
+    border-left: 2px inset #000;
+    border-right: 2px inset #000;
+    color:ghostwhite;
+    text-decoration:none;
+    
+}
+nav ul li a:hover{
+    background-color:red;
+    color:black;
 }
 
 footer{
@@ -111,12 +111,13 @@ div.keepOpen{
     clear:both;
 }
 
-@media screen and (max-width: 400px) {
-    figure.product{
+@media screen and (max-width: 1040px) {
+    div#container{
+        width:%;
+    }
+    nav ul li a{
         float:none;
-        margin:10px auto;
-        min-width:50%;
-        max-width:100%;
+        text-align:center;
     }
 }
 
