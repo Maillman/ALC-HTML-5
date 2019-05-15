@@ -111,7 +111,7 @@ div.keepOpen{
     clear:both;
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 1050px) {
     div#container{
         width:%;
     }
@@ -119,6 +119,19 @@ div.keepOpen{
         float:none;
         text-align:center;
     }
+}
+
+legend, span {
+    display:block;
+	margin:auto;
+	text-align:center;
+    font-family: 'Allerta Stencil', sans-serif;
+	color:red;
+}
+input, textarea{
+    display:block;
+	margin:auto;
+	text-align:center;
 }
 
 .icon-bar {
